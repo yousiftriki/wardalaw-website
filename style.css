@@ -1,106 +1,135 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-}
-
-.background-image {
-    background-image: url('/vecteezy_judge-gavel-on-a-wooden-desk-law-concept_4340263.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 600px; /* Adjust the height as needed */
-}
-
-header {
-    background-color: gold;
-    color: black;
-    text-align: center;
-    padding: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
-    padding: 10px 20px;
-    justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.nav-right {
-    font-size: 6pt;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: initial;
-    margin-right: 0;
-    justify-content: right;
-    margin-left: 1500px;
-}
-
-.nav-middle {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100px;
+    padding: 2% 20%; /* Adjust as needed */
 }
 
-.logo {
-    width: 100px; 
-    display: block;
-    margin: 0;
-    padding: 0;
-    margin-left: 710;
+nav img {
+    width: 100px;
+    margin-bottom: 20px; /* Add spacing below the logo */
 }
-
 
 .nav-links {
-    padding-right: 1;
+    text-align: center;
+}
+
+.nav-links ul {
     list-style: none;
     display: flex;
-    align-items: center;
-    margin-left: 710px;
+    justify-content: center;
 }
 
-.nav-links li {
-    margin-right: 20px;
+.nav-links ul li {
+    padding: 8px 0px;
+    margin: 0 10px;
 }
 
-.nav-links a {
+.nav-links ul li a {
+    color: black;
     text-decoration: none;
-    color: black;
+    font-size: 13px;
+    margin: 0 10px;
 }
-
-section {
-    padding: 80px 0;
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(0, 145, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
-
-.hero, .contact-content {
-    max-width: 550px;
-    text-align: left;
-    margin-left: 300px;
-    padding-right: 30px;
-    font-family: Georgia, Arial, Helvetica, sans-serif;
-}
-.contact-content {
-    margin-left: 1050px;
-    margin-top: -510px;
-    font-size: 20pt;
-    
-}
-.services-content {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-footer {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 1em 0;
-    bottom: 0;
+.nav-links ul li:hover::after{
     width: 100%;
 }
+.text-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 40pt;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid rgba(0, 145, 255);
+    background-color: rgba(0, 145, 255);
+    transition: 1s;
+}
+
+/*----- chooseus ----*/
+
+.chooseus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 630px;
+}
+
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+ }
+
+ p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+ }
+
+ .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+ }
+.choose-col{
+    flex-basis: 31%;
+    background: rgb(227, 244, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.choose-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
