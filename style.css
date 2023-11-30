@@ -4,6 +4,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.header{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.408),rgba(4, 9, 30, 0.408)),url(images/scales\ of\ justice.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -32,7 +42,7 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 13px;
     margin: 0 10px;
@@ -53,7 +63,7 @@ nav img {
     width: 90%;
     color: black;
     position: absolute;
-    top: 50%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -133,3 +143,146 @@ h3{
     }
 }
 
+/*----- call to action ----*/
+
+.cta{
+    margin: 15% auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn2:hover{
+    border: 1px solid rgba(0, 145, 255);
+    background-color: rgba(0, 145, 255);
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/*------footer----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/*------ about us page -----*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.186),rgba(4, 9, 30, 0.186)),url(images/lady-justice.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 55%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+/*-----practice----*/
+
+.practices{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+ h3{
+    font-size: 36px;
+    font-weight: 600;
+ }
+
+ p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+ }
+
+ .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+ }
+.practice-col{
+    flex-basis: 31%;
+    background: rgb(227, 244, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.practice-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
