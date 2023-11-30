@@ -63,7 +63,7 @@ nav img {
     width: 90%;
     color: black;
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -104,7 +104,7 @@ nav img {
 }
 
  h1{
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
  }
 
