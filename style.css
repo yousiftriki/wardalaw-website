@@ -12,6 +12,10 @@
     background-size: cover;
     text-align: center;
     color: white;
+    margin-bottom: 30px;
+}
+@media(max-width: 700px){
+    
 }
 
 nav {
@@ -68,6 +72,7 @@ nav img {
     transform: translate(-50%, -50%);
     text-align: center;
     position: absolute;
+    margin-top: 50px;
 }
 .text-box h1{
     font-size: 25pt;
