@@ -49,13 +49,17 @@
     </div>
     <div class="contact-col">
 
-<form action="form-handler.php" method="post">
-    <input type="text" name="name" placeholder="Enter Your Name" required>
-    <input type="email" name="email" placeholder="Enter Email Address" required>
-    <input type="text" name="subject" placeholder="Enter Your Inquiry" required>
-    <textarea rows="8" name="message" required></textarea>
-    <button type="submit" class="hero-btn"> Send Message</button>
-</form>
+        <form action="https://formspree.io/f/mwkddjzk" method="POST">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Email Address" required>
+            <input type="text" name="subject" placeholder="Enter Your Inquiry" required>
+            <textarea rows="8" name="message" required></textarea>
+            <!-- Add the _gotcha field to prevent spam -->
+            <input type="text" name="_gotcha" style="display:none">
+            <!-- Optional: Add the _replyto field for a confirmation email -->
+            <button type="submit" class="hero-btn">Send Message</button>
+        </form>
+        
 
 
     </div>

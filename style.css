@@ -297,6 +297,7 @@ h3{
 }
 .location iframe{
     width: 100%;
+    border-radius: 10px;
 }
 .contact-us{
     width: 80%;
