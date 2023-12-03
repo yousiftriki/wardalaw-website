@@ -331,3 +331,15 @@ h3{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+.disclaimer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.disclaimer h6{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 12pt;
+}
